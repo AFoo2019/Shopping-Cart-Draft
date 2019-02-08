@@ -1,0 +1,18 @@
+<li>
+    <div class="details">
+      <AHIDE>
+      <form class="d-flex flex-column" method="POST" onsubmit="" onreset="" action="">
+          <input type="hidden" name="stories[id]" value="{@storyid}"/>
+          <HIDE->
+          <h2> {@title}</h2>
+          <h3>{@subtitle}</h3>
+          <div>{@content}</div>
+          <p>{@authorfname}</p>
+          <p>{@authorsname}</p>
+          <HIDE>
+        <button class="btn w-25" type="submit" formaction="?route=storysave&id={@storyid}">EDIT</button>
+        <button class="btn w-25" type="submit" formaction="?route=stories&action=delete">DELETE</button>
+      </form>
+      <AHIDE->
+    </div>
+</li>

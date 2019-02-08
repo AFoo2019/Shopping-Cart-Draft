@@ -1,0 +1,22 @@
+
+<li>
+    <p class="details">
+      {@applicantfname}
+    </p>
+    <p class="details">
+      {@applicantsname}
+    </p>
+    <p class="details">
+      {@applicantemail}
+    </p>
+    <form class="d-flex flex-column" action="?route=carsave&action=uploadimages" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="cars[id]" value="{@carid}"/>
+      <div class="form-group">
+        <input class="form-control" type="file" name="my_file[]" multiple>
+      </div>
+      <input class="btn" type="submit" value="Upload">
+
+    </form>
+</li>
+
+{@list}

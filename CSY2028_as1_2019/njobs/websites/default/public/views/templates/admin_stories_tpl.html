@@ -1,0 +1,24 @@
+
+
+
+      <form action="?route=stories&action=save" method="POST" class="d-flex flex-column" enctype="multipart/form-data">
+        <input type="hidden" name="jobss[id]" value="{@storyid}"/>
+
+
+        <label>title</label>
+        <div class="form-group">
+        <input class="form-control" type="text" name="jobtitle[title]" value="{@title}" />
+        </div>
+
+        <!-- <label>subtitle</label>
+        <div class="form-group">
+        <input class="form-control" type="text" name="stories[subtitle]" value="{@subtitle}"/>
+        </div> -->
+
+        <label >content</label>
+        <div class="form-group">
+        <textarea class="form-control summernote" name="jobdescription[content]">{@content}</textarea>
+        </div>
+        <input type="hidden" name="job[accountid]" value="{@accountid}"/>
+        <input type="submit" value="SAVE"/>
+      </form>

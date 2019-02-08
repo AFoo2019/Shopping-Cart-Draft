@@ -1,0 +1,17 @@
+<h2>Manage Careers</h2>
+
+<form action="?route=careersave&action=save" method="POST" style="overflow-y:scroll;">
+  <input type="hidden" name="careers[id]" value="{@jobid}"/>
+
+  <label>Job Title</label>
+  <input type="text" name="careers[jobtitle]" value="{@jobtitle}"/>
+
+  <label>Date of publication</label>
+  <input type="text" name="careers[jobpub]" value="{@jobpub}"/>
+
+  <label>Description</label>
+  <textarea name="careers[jobdescription]" value="{@jobdescription}"></textarea>
+
+  <input class="btn btn-success" type="submit" name="submit" value="SAVE" />
+
+</form>

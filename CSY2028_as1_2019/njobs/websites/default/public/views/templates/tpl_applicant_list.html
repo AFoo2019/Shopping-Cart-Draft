@@ -1,0 +1,17 @@
+<li class="list-unstyled">
+    <div class="details">
+      <form class="d-flex flex-column" method="POST" onsubmit="" onreset="" action="">
+          <input type="hidden" name="applicants[id]" value="{@applicantid}"/>
+
+          <p>{@applicantemail}</p>
+          <div class="details">
+            <strong>{@applicantfname}</strong>
+            <em>{@applicantsname}</em>
+          </div>
+        <HIDE>
+        <button class="btn w-25" type="submit" formaction="?route=applicantregister&applicantid={@applicantid_edit}&jobid={@jobid}">EDIT</button>
+        <button class="btn w-25" type="submit" formaction="?route=applicantsbyjob&action=delete&applicantid={@applicantid_edit}&jobid={@jobid}">DELETE</button>
+        <HIDE->
+      </form>
+    </div>
+</li>

@@ -1,0 +1,47 @@
+<li>
+    <div class="details">
+
+      <form method="POST" onsubmit="" onreset="" action="">
+      <input type="hidden" name="jobss[id]" value="{@jobid}"/>
+
+      <input type="hidden" name="jobss[id]" value="{@jobid}"/>
+
+      <div> {@jobtitle}</div>
+      <div class="price">{@joblocation}</div>
+        <div class="collapse" id="description{@jobid}">
+
+        <p>Product description : {@jobdescription}</p>
+
+        </div>
+        <div><a class="btn collapsed " data-toggle="collapse" data-target="#description{@jobid}" role="button" aria-expanded="false" aria-controls="description">DETAILS</a></div>
+
+        <div class="row d-inline justify-content-center">
+        <HIDE>
+        <AHIDE>
+        <button class="d-inline btn mr-1" type="submit" formaction="?route=jobsave&id={@jobid}" style="display:{@hidden};">EDIT</button>
+        <button class="d-inline btn mr-1" type="submit" formaction="?route=jobss&action=delete" style="display:{@hidden};">DELETE</button>
+        <AHIDE->
+        <HIDE->
+        <HIDE>
+        <button class="d-inline btn float-right" type="submit" formaction="?route=applicantsbyjob&jobid={@jobid}">REVIEWS</button>
+        <HIDE->
+        <form class="form-inline" method="POST" onsubmit="" onreset="" action="">
+  <label class="form-group" for="qty">qty</label>
+          <div class="form-group">
+
+  <select class="form-control" name="quantity" value="" id="qty">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</div>
+
+        <button class="md-form btn btn-warning" type="submit" formaction="?route=shop&action=add&jobid={@jobid}">ADD TO BASKET</button>
+        </form>
+        <a class="ml-5" href="?route=shop&action=remove&jobid={@jobid}" title="REMOVE ITEMS">
+        <i class="fa fa-trash"></i>
+        </a>
+  </div>
+</li>

@@ -1,0 +1,12 @@
+<li>
+    <div class="details">
+      <form class="d-flex flex-column" method="POST" onsubmit="" onreset="" action="">
+        <input type="hidden" name="categories[id]" value="{@categoryid}"/>
+        <div class="form-group">
+          <input class="form-control" type="text" name="categories[category]" value="{@category}"/>
+        </div>
+        <button class="btn w-25 mb-2" type="submit" formaction="?route=categories&action=save&id={@categoryid}">EDIT</button>
+        <button class="btn w-25 mb-2" type="submit" formaction="?route=categories&action=delete">DELETE</button>
+      </form>
+    </div>
+</li>

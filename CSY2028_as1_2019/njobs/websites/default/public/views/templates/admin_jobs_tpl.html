@@ -1,0 +1,34 @@
+<h2>Manage Products</h2>
+
+<form class="d-flex flex-column" action="?route=jobss&action=save" method="POST" enctype="multipart/form-data" style="overflow-y:scroll;">
+  <input type="hidden" name="jobss[id]" value="{@jobid}"/>
+
+
+    <div class="form-group">
+    <textarea class="form-control summernote" name="jobss[jobtitle]">{@jobtitle}</textarea>
+    </div>
+  <div class="form-group">
+  <label>Product Price</label>
+  <input class="form-control" type="text" name="jobss[joblocation]" value="{@joblocation}"/>
+  </div>
+  <div class="form-group">
+  <label>Category</label>
+  <select class="w-100" name="jobss[categoryid]">
+    {@categoryoptions}
+  </select>
+  </div>
+  <label>Job Featured</label>
+  <div class="form-group">
+  <textarea class="form-control " name="jobss[jobfeatured]">{@jobfeatured}</textarea>
+  </div>
+  <label>Description</label>
+  <div class="form-group">
+  <textarea class="form-control" name="jobss[jobdescription]">{@jobdescription}</textarea>
+  </div>
+
+
+
+  <div class="form-group">
+  <input class="btn btn-success" type="submit" name="submit" value="SAVE" />
+  </div>
+</form>
